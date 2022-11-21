@@ -242,7 +242,11 @@ header a:hover{
 .ligth-box:target{
     transform:scale(1);
 }*/
-
+#mapa .localidades{
+    float: left;
+    list-style: none;
+    color: black;
+}
 #mapa {
     display: flex;
     text-align: center;
@@ -250,7 +254,7 @@ header a:hover{
     width: 235vh;
     padding: 10px;
     background-color: rgba(46, 46, 46, 0.322);
-    color: rgba(255, 255, 255, 0.493);
+    color: rgb(0, 0, 0);
 }
 #mapa .container{
     display: flex;
