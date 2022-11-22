@@ -83,7 +83,7 @@ header a:hover{
     color: black;
     height: 50vh;
     padding-top: 45px;
-    padding-bottom: 45px;
+    padding-bottom: 55px;
 }
 #sobre-nosotros .container{
     text-align: center;
@@ -178,7 +178,7 @@ img{
     color: black;
 }
 #mapa {
-    height: 75vh;
+    height: 85vh;
     padding: 0px;
     background-color: rgba(46, 46, 46, 0.322);
     color: rgb(0, 0, 0);
