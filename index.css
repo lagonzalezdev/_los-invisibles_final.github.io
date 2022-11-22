@@ -1,7 +1,6 @@
 *{
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -10,7 +9,6 @@ h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
 p{ font-size: 1.25em;}
 ul{ list-style: none;}
-
 body{
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;    
@@ -39,7 +37,6 @@ button:hover{
 header {
     background-color: black;
 }
-
 header .logo{
     margin: 0;
     padding: 25px 30px;
@@ -47,21 +44,18 @@ header .logo{
     color: white;
     font-size: 1.5rem;
 }
-
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-
 header nav{
     display:flex;
     flex-direction: row;
     text-align: center;
     padding-bottom: 20px;
-    }
-
+}
 header a{
     padding: 5px 12px;
     text-decoration: none;
@@ -69,15 +63,9 @@ header a{
     color: white;
     font-size: 1rem;
 }
-
 header a:hover{
     color:rgb(37, 37, 37)
 }
-
-.color-invisibles{    /*titulo*/
-    color: gray;
-}
-
 #hero{
     display: flex;
     align-items: center;
@@ -86,22 +74,20 @@ header a:hover{
     flex-direction: column;
     height: 80vh;
     color: black ;
-    background-image: url("img/Imagen_medellin_BN.jpg");
+    background-image: url("img/portada-pagina.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
-
 #hero1{
     color: rgb(255, 255, 255);
 }
-
 #sobre-nosotros{
     color: black;
     height: 50vh;
+    padding-top: 45px;
     
 }
-
 #sobre-nosotros .container{
     text-align: center;
     padding: 200px,300px;
@@ -117,11 +103,9 @@ header a:hover{
     background-color: black;
     padding: 50px 10px;
 }
-
 #nuestros-protagonistas h3{
         margin-top: 0;
 }
-
 #nuestros-protagonistas p{
     display: none;
 }
@@ -132,142 +116,94 @@ header a:hover{
     margin: 20px;
     border-radius: 15px;
 }
+button:hover{
+    background-color: rgba(117, 117, 117, 0.5);
+}
 .perfiles:first-child{
-    background-image: url(img/maribel-definitiva.jpg);
+    background-image: url(img/P_MARIBEL.jpg);
     
 }
 .perfiles:nth-child(2){
-    background-image: url(img/luis-red.jpg);
+    background-image: url(img/P_LUIS.jpg);
 }
 .perfiles:nth-child(3){
-    background-image: url(img/dario-red.jpg);
+    background-image: url(img/P_DARIO.jpg);
 }
 .perfiles:nth-child(4){
-    background-image: url(img/carmenza-red.jpg); 
+    background-image: url(img/P_CARMENZA.jpg); 
 }
 .perfiles:nth-child(5){
-    background-image: url(img/shap-red.jpg);
+    background-image: url(img/P_SHAP.jpg);
 }
-
 #fotos h1 {
     text-align:center;
-    }
-
+}
 .grid-item{
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: white;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    border: solid 1px rgba(0, 0, 0, 0.281);
-
-    background-size: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-out;
+    
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .grid-item:hover{
-    filter: opacity(0.9);
+    filter: opacity(0.10);
     transform: scale(.001);
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 400px));
-    grid-auto-rows: minmax(200px, 4px);
-    gap: 5px;
-    padding: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 450px));
+    grid-auto-rows: minmax(200px, 40px);
+    gap: 1px;
+    padding: 2px;
     grid-auto-flow: dense;
 }
 .wide{
     grid-column: span 2;
+    max-width: 100%;
 }
 .tall{
     grid-row: span 2;
+    max-width: 100%
 }
-/*#fotos{
-    margin: 0;
-    padding: 0%;
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+#mapa .title{
     text-align: center;
+    padding-top: 45px;
 }
-
-.fotos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    width: 95%;
-    margin: auto;
-    grid-gap:10px;
-    padding: 40px;
-    overflow: hidden;
-    }
-    
-.fotos >a{
-    display: block;
-    position: relative;
-    box-shadow: 0 0 6px rgba(0 0 0 .5);
-}
-
-
-.fotos img{
-    width: 100%;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-}
-
-.fotos a:hover img{
-    filter: blur(2px);
-}
-
-.light-box{
-    position: fixed;
-    top: 0;
-    left:0;
-    background: rgba(0 0 0 .5);
-    transition: transform .3s ease-in-out; 
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-}
-
-.ligth-box img{
-    width: 75vh;
-    max-height: 70vh;
-}
-
-.ligth-box:target{
-    transform:scale(1);
-}*/
 #mapa .localidades{
-    float: left;
     list-style: none;
     color: black;
 }
 #mapa {
-    height: 120vh;
-    width: 250vh;
-    padding: 10px;
+    height: 75vh;
+    padding: 0px;
     background-color: rgba(46, 46, 46, 0.322);
     color: rgb(0, 0, 0);
 }
 #mapa .container{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
 }
-
 .mapadiv path{
-    fill: rgb(90, 88, 88);
-    
+    fill: rgb(90, 88, 88); 
 }
-
+#mapa .etiqueta{
+    text-align: center;
+    padding-top: 45px;
+}
 footer{
     background-color: rgb(0, 0, 0);
- 
 }    
 footer .logo{
     margin: 10;
@@ -276,9 +212,8 @@ footer .logo{
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
 }
-
 footer .container{
-    height: 45vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,22 +224,19 @@ footer nav{
     flex-direction: row;
     text-align: center;
     padding-bottom: 20px;
-    } 
-
+} 
 footer a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
     font-size: 1rem;
-    }
-    
+}
 footer a:hover{
     color:rgb(37, 37, 37)
-    }
-
+}
 /*******************MEDIA QUERY******************/
-/*@media (min-width: 720px){
+@media (min-width: 720px){
     header{
         position: fixed;
         width: 100%;
@@ -355,5 +287,7 @@ footer a:hover{
     #nuestros-protagonistas .perfiles{
         padding: 15px;
         box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.096);
+        height: 450px;
+        width: 250px;
     }
-}*/
+}
