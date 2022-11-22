@@ -83,6 +83,7 @@ header a:hover{
     color: black;
     height: 50vh;
     padding-top: 45px;
+    padding-bottom: 45px;
 }
 #sobre-nosotros .container{
     text-align: center;
